@@ -2,6 +2,7 @@ services:
 - type: web
   name: contraptionco
   env: static
+  buildCommand: yarn run generate
   staticPublishPath: dist
   headers:
   - path: /*
