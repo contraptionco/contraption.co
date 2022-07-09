@@ -1,5 +1,7 @@
 <template>
-  <Tutorial />
+  <div>
+    Welcome to contraption.co
+  </div>
 </template>
 
 <script>
