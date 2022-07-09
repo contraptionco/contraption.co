@@ -1,0 +1,30 @@
+services:
+- type: web
+  name: contraptionco
+  env: static
+  staticPublishPath: dist
+  headers:
+  - path: /*
+    name: X-Frame-Options
+    value: DENY
+  - path: /*
+    name:  X-XSS-Protection
+    value: "1; mode=block"
+  - path: /*
+    name:  Content-Security-Policy
+    value: "upgrade-insecure-requests; default-src 'unsafe-inline' 'self'; script-src 'unsafe-inline' 'self' hare.contraption.co; connect-src 'self' *.contraption.co; img-src 'self' hare.contraption.co; font-src 'self' data: 'unsafe-eval';"
+  - path: /*
+    name: X-Content-Type-Options
+    value: nosniff
+  - path: /*
+    name: Referrer-Policy
+    value: "no-referrer-when-downgrade"
+  - path: /*
+    name: Feature-Policy
+    value: ";"
+  - path: /*
+    name: Strict-Transport-Security
+    value: "max-age=63072000; includeSubDomains; preload"
+  - path: /*
+    name: Permissions-Policy
+    value: "interest-cohort=()"
