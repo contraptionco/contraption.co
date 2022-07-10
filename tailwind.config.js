@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     colors: {
       transparent: 'transparent',
-      white: "#ffffff",
-      black: "#000000",
+      white: '#ffffff',
+      black: '#000000',
       gray: {
         '050': '#F7F7F7',
         '075': '#ECECEC',
@@ -22,17 +22,17 @@ module.exports = {
         850: '#2F2F2F',
         900: '#222222',
         925: '#1A1A1A',
-        950: '#111111',
-      },
+        950: '#111111'
+      }
     },
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans]
       },
-      typography: (theme) => ({
+      typography: theme => ({
         DEFAULT: {
           css: {
-            color: theme("colors.gray.900"),
+            color: theme('colors.gray.900'),
             'ol[type="A"]': false,
             'ol[type="a"]': false,
             'ol[type="A" s]': false,
@@ -41,14 +41,14 @@ module.exports = {
             'ol[type="i"]': false,
             'ol[type="I" s]': false,
             'ol[type="i" s]': false,
-            'ol[type="1"]': false,
-          },
-        },
-      }),
-    },
+            'ol[type="1"]': false
+          }
+        }
+      })
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }
