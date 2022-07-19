@@ -1,0 +1,6 @@
+.container {
+    @apply px-6;
+    @apply lg:px-0;
+    @apply mx-auto;
+    @apply max-w-md;
+}

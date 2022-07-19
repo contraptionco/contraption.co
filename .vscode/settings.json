@@ -1,3 +1,10 @@
 {
-    "workbench.colorTheme": "Stripe Theme"
+    "workbench.colorTheme": "Stripe Theme",
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "vetur.format.defaultFormatter.js": "prettier-eslint",
 }
