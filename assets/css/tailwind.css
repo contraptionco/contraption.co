@@ -1,6 +1,12 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+
 .container {
     @apply px-6;
     @apply lg:px-0;
     @apply mx-auto;
-    @apply max-w-md;
+    @apply max-w-4xl;
 }

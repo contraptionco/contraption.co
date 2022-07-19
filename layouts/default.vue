@@ -1,12 +1,20 @@
 <template>
   <div
-    class="pt-20 overflow-hidden text-gray-100 bg-gray-950 gray-100 font-body"
+    class="
+      antialiased
+      scroll-smooth
+      overflow-hidden
+      font-sans
+      text-gray-100
+      bg-gray-950
+      gray-100
+      min-h-screen
+    "
   >
-    <div class="min-h-screen">
-      <main class="container bg-gray-500">
-        <nuxt />
-      </main>
-    </div>
+    <NavBar />
+    <main class="container bg-primary-500">
+      <nuxt />
+    </main>
   </div>
 </template>
 
