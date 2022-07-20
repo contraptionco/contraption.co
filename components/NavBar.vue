@@ -17,6 +17,8 @@
                 px-2
                 text-sm text-gray-100
                 hover:text-gray-050
+                underline
+                decoration-primary-500
               "
               >{{ item.name }}
             </a>
@@ -24,7 +26,7 @@
         </div>
         <div class="flex items-center gap-x-5 md:gap-x-8">
           <a class="btn btn-primary" href="/#">
-            <span>Contact us → </span>
+            <span>Contact <span class="hidden xs:inline">us </span> → </span>
           </a>
           <div class="-mr-1 md:hidden">
             <div>
@@ -81,6 +83,7 @@ export default {
   components: { Wordmark },
   data () {
     return {
+      menuOpen: false,
       items: [
         {
           name: 'About',
