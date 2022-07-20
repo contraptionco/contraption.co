@@ -27,6 +27,6 @@
 
 .btn-primary {
   @apply bg-accent;
-  @apply text-gray-050;
-  @apply hover:text-gray-075;
+  @apply text-gray-075;
+  @apply hover:text-gray-050;
 }

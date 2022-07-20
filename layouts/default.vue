@@ -12,7 +12,7 @@
     "
   >
     <NavBar />
-    <main class="container bg-primary-500">
+    <main class="container">
       <nuxt />
     </main>
   </div>

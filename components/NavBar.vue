@@ -1,58 +1,34 @@
 <template>
   <header class="py-10">
     <div class="container">
-      <nav class="relative z-50 flex justify-between">
+      <nav class="relative z-50 flex justify-between items-center">
+        <a aria-label="Home" href="/">
+          <wordmark class="text-gray-050 fill-current w-40" />
+        </a>
         <div class="flex items-center md:gap-x-12">
-          <a aria-label="Home" href="/">
-            <wordmark class="text-gray-050 fill-current w-40" />
-          </a>
           <div class="hidden md:flex md:gap-x-6">
             <a
+              v-for="item in items"
+              :key="item.name"
+              :href="item.href"
               class="
                 inline-block
-                rounded-lg
                 py-1
                 px-2
-                text-sm text-gray-700
-                hover:bg-gray-100 hover:text-gray-900
+                text-sm text-gray-100
+                hover:text-gray-050
               "
-              href="/#features"
-              >Features
-            </a>
-            <a
-              class="
-                inline-block
-                rounded-lg
-                py-1
-                px-2
-                text-sm text-gray-700
-                hover:bg-gray-100 hover:text-gray-900
-              "
-              href="/#testimonials"
-              >Testimonials
-            </a>
-            <a
-              class="
-                inline-block
-                rounded-lg
-                py-1
-                px-2
-                text-sm text-gray-700
-                hover:bg-gray-100 hover:text-gray-900
-              "
-              href="/#pricing"
-              >Pricing
+              >{{ item.name }}
             </a>
           </div>
         </div>
         <div class="flex items-center gap-x-5 md:gap-x-8">
-          <a class="btn btn-primary" href="/register">
+          <a class="btn btn-primary" href="/#">
             <span>Contact us → </span>
           </a>
           <div class="-mr-1 md:hidden">
             <div>
               <button
-                id="headlessui-popover-button-:R1p6:"
                 class="
                   relative
                   z-10
@@ -62,25 +38,31 @@
                   items-center
                   justify-center
                   [&amp;:not(:focus-visible)]:focus:outline-none
+                  font-semibold
                 "
                 aria-label="Toggle Navigation"
                 type="button"
                 aria-expanded="false"
               >
                 <svg
-                  aria-hidden="true"
-                  class="h-3.5 w-3.5 overflow-visible stroke-gray-700"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="
+                    h-6
+                    w-6
+                    overflow-visible
+                    stroke-gray-100
+                    fill-current
+                    hover:stroke-gray-050
+                  "
                   fill="none"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="{2}"
                 >
                   <path
-                    d="M0 1H14M0 7H14M0 13H14"
-                    class="origin-center transition"
-                  />
-                  <path
-                    d="M2 2L12 12M12 2L2 12"
-                    class="origin-center transition scale-90 opacity-0"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
                   />
                 </svg>
               </button>
@@ -96,6 +78,24 @@
 import Wordmark from '~/assets/logo/wordmark.svg?inline'
 
 export default {
-  components: { Wordmark }
+  components: { Wordmark },
+  data () {
+    return {
+      items: [
+        {
+          name: 'About',
+          href: '#'
+        },
+        {
+          name: 'Collabs',
+          href: '#'
+        },
+        {
+          name: 'Projects',
+          href: '#'
+        }
+      ]
+    }
+  }
 }
 </script>
