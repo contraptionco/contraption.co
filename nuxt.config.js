@@ -30,7 +30,8 @@ export default {
 
   modules: [
     '@nuxtjs/pwa',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/sitemap'
   ],
 
   pwa: {
@@ -45,5 +46,22 @@ export default {
   },
   generate: {
     fallback: true
+  },
+  sitemap: {
+    hostname: 'https://www.contraption.co',
+    gzip: true
+    /*
+    exclude: ['/policies/*'],
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      const columns = await $content('columns').only(['slug']).fetch()
+
+      return [
+        ...pages,
+        ...columns.map(file =>
+          file.slug === 'index' ? '/' : `${file.slug}/`
+        )
+      ]
+    } */
   }
 }
