@@ -107,7 +107,7 @@
           items-stretch
           gap-y-2
           mt-6
-          py-2
+          py-4
           bg-gray-900
           mobile-nav-links
         "
