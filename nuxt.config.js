@@ -43,7 +43,7 @@ export default {
     },
     meta: {
       name: 'Contraption Co.',
-      ogHost: 'www.contraption.co',
+      ogHost: 'https://www.contraption.co',
       twitterCreator: '@philipithomas',
       themeColor: '#111111',
       description: 'The Contraption Company is a digital product development studio by Philip I. Thomas.',
