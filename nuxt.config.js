@@ -24,12 +24,12 @@ export default {
 
   buildModules: [
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/svg'
   ],
 
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/tailwindcss',
     '@nuxt/content'
   ],
 
@@ -42,5 +42,6 @@ export default {
   content: {},
 
   build: {
-  }
+  },
+  devServerHandlers: []
 }
