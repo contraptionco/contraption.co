@@ -10,7 +10,6 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
@@ -35,8 +34,20 @@ export default {
   ],
 
   pwa: {
+    workbox: false,
     manifest: {
       lang: 'en'
+    },
+    icon: {
+      source: 'assets/logo/icon.png'
+    },
+    meta: {
+      name: 'Contraption Co.',
+      ogHost: 'www.contraption.co',
+      twitterCreator: '@philipithomas',
+      themeColor: '#111111',
+      description: 'The Contraption Company is a digital product development studio by Philip I. Thomas.',
+      author: 'Philip I. Thomas'
     }
   },
 
