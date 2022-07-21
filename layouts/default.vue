@@ -9,12 +9,21 @@
       bg-gray-950
       gray-100
       min-h-screen
+      flex flex-col
     "
   >
     <NavBar />
-    <main class="container">
+    <main
+      class="
+        container
+        flex-grow flex flex-col
+        items-stretch
+        justify-items-stretch
+      "
+    >
       <nuxt />
     </main>
+    <div class="header-spacer" />
   </div>
 </template>
 
@@ -22,4 +31,8 @@
 export default {}
 </script>
 
-<style></style>
+<style scoped>
+.header-spacer {
+  height: 116px;
+}
+</style>
