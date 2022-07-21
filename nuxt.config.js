@@ -25,6 +25,15 @@ export default {
   css: [
   ],
 
+  googleFonts: {
+    download: true,
+    families: {
+      Inter: {
+        wght: [100 + '..' + 900]
+      }
+    }
+  },
+
   plugins: [
   ],
 
@@ -33,7 +42,8 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    '@nuxtjs/google-fonts'
   ],
 
   modules: [
