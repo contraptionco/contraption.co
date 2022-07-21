@@ -42,5 +42,8 @@ export default {
   content: {},
 
   build: {
+  },
+  generate: {
+    fallback: true
   }
 }
