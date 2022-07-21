@@ -28,7 +28,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+        sans: ['Inter var', 'Inter', ...defaultTheme.fontFamily.sans]
       },
       typography: theme => ({
         DEFAULT: {
