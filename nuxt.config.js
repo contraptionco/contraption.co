@@ -1,12 +1,21 @@
+const description = 'The Contraption Company is a digital product development studio by Philip I. Thomas.'
 export default {
   target: 'static',
 
   head: {
     title: 'Contraption Co.',
+    titleTemplate: (titleChunk) => {
+      // If undefined or blank then we don't need the divider
+      const title = 'Contraption Co.'
+      return titleChunk && titleChunk !== title
+        ? `${titleChunk} | ${title}`
+        : title
+    },
+
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: description },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -46,7 +55,7 @@ export default {
       ogHost: 'https://www.contraption.co',
       twitterCreator: '@philipithomas',
       themeColor: '#111111',
-      description: 'The Contraption Company is a digital product development studio by Philip I. Thomas.',
+      description,
       author: 'Philip I. Thomas'
     }
   },
