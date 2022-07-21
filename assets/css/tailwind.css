@@ -30,3 +30,12 @@
   @apply text-gray-075;
   @apply hover:text-gray-050;
 }
+
+.hover\:accent-underline:hover {
+  text-decoration: underline;
+  text-decoration-color: #4D3DF7;
+}
+.accent-underline {
+  text-decoration: underline;
+  text-decoration-color: #4D3DF7;
+}

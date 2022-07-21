@@ -24,21 +24,7 @@ module.exports = {
         925: '#1A1A1A',
         950: '#111111'
       },
-      accent: '#4D3DF7',
-
-      primary: { // Deprecated
-        // purple
-        '050': '#E6E6FF',
-        100: '#C4C6FF',
-        200: '#A2A5FC',
-        300: '#8888FC',
-        400: '#7069FA',
-        500: '#5D55FA',
-        600: '#4D3DF7',
-        700: '#3525E6',
-        800: '#1D0EBE',
-        900: '#0C008C'
-      }
+      accent: '#4D3DF7'
     },
     extend: {
       fontFamily: {
