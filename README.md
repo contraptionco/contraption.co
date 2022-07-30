@@ -1,4 +1,4 @@
-# contraption.co
+# [contraption.co](https://contraption.co)
 
 ## Build Setup
 
