@@ -19,7 +19,10 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-    ]
+    ],
+    htmlAttrs: {
+      lang: 'en'
+    }
   },
 
   css: [
