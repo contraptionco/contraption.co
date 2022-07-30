@@ -25,7 +25,7 @@
         </div>
         <div class="flex items-center gap-x-5 md:gap-x-8">
           <a class="btn btn-primary" href="/#">
-            <span>Contact <span class="hidden sm:inline">us </span> → </span>
+            <span>Contact →</span>
           </a>
           <div class="-mr-1 md:hidden">
             <div>

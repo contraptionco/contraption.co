@@ -15,7 +15,7 @@
             sm:text-4xl
           "
         >
-          Page not found.
+          Page not found
         </h1>
         <div class="mt-6">
           <nuxt-link
