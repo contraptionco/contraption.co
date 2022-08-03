@@ -9,8 +9,7 @@
         href="https://philipithomas.com"
         target="_blank"
         class="accent-underline"
-        >Philip I. Thomas</a
-      >
+      >Philip I. Thomas</a>
     </h2>
   </div>
 </template>
