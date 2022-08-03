@@ -20,13 +20,15 @@
         href="https://github.com/basecamp/policies"
         target="_blank"
         rel="nofollow noreferrer"
-      >Basecamp open-source policies</a>
+        >Basecamp open-source policies</a
+      >
       /
       <a
         target="_blank"
         href="https://creativecommons.org/licenses/by/4.0/"
         rel="nofollow noreferrer"
-      >CC BY 4.0</a>
+        >CC BY 4.0</a
+      >
     </p>
   </div>
 </template>
@@ -36,7 +38,7 @@ export default {
   async asyncData ({ $content, params, error }) {
     const policies = await $content('policies')
       .only(['title', 'slug', 'order', 'description'])
-      .sortBy('number', 'asc')
+      .sortBy('order', 'asc')
       .fetch()
       .catch(() => {
         error({ statusCode: 404, message: 'Page not found' })

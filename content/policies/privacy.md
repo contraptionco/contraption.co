@@ -1,8 +1,8 @@
 ---
 title: Privacy policy
 description: The privacy of your data matters. Here’s the rundown of what we collect and why, when we access your information, and your rights.
-order: 1
-lastUpdated: July 18, 2022
+order: 2
+lastUpdated: August 3, 2022
 ---
 
 The privacy of your data—and it is your data, not ours!—is a big deal to us. In this policy, we lay out: what data we collect and why; how your data is handled; and your rights with respect to your data. We promise we never sell your data: never have, never will.
