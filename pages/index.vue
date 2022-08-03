@@ -3,7 +3,7 @@
     <h1 class="text-4xl md:text-7xl font-semibold text-gray-050">
       Product development studio
     </h1>
-    <h2 class="text-lg pt-4 md:pt-8 text-gray-075 uppercase">
+    <h2 class="text-lg pt-4 md:pt-8 text-gray-075 tracking-widest uppercase">
       By
       <a
         href="https://philipithomas.com"
