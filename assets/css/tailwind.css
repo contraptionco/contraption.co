@@ -5,15 +5,19 @@
 @import 'tailwindcss/utilities';
 
 html, body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-display: block;
 }
 
 .container {
-    @apply px-4;
-    @apply sm:px-6;
-    @apply lg:px-8;
-    @apply mx-auto;
-    @apply max-w-5xl;
+  @apply px-4;
+  @apply sm:px-6;
+  @apply lg:px-8;
+  @apply mx-auto;
+  @apply max-w-5xl;
 }
 
 .btn {
@@ -42,4 +46,41 @@ html, body {
 .accent-underline {
   text-decoration: underline;
   text-decoration-color: #4D3DF7;
+}
+
+.prose {
+  @apply text-gray-100;
+}
+.prose li::marker {
+  @apply text-gray-100;
+}
+.prose strong {
+  @apply text-gray-050;
+}
+
+.prose h1 {
+  @apply text-gray-050;
+  @apply text-2xl;
+  @apply lg:text-3xl;
+  @apply font-semibold;
+}
+.prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  @apply text-gray-075;
+  @apply font-semibold;
+  @apply lg:text-2xl;
+  @apply text-xl;
+}
+
+.prose a {
+  @apply text-gray-100;
+  @apply accent-underline;
+}
+
+a.breadcrumb {
+  @apply text-xs;
+  @apply uppercase;
+  @apply text-accent !important;
+  @apply no-underline !important;
+  @apply hover:underline !important;
+  @apply font-semibold !important;
 }

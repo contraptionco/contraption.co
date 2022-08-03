@@ -1,7 +1,7 @@
 
 Contraption Co. policies in the `content/policies/` folder are open source, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Adapted from the [Basecamp open-source policies](https://github.com/basecamp/policies) / [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-All other content is available under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license..
+All other content is available under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license:
 
 > ## Creative Commons Attribution 4.0 International Public License ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
 >

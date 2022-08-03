@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="flex items-center gap-x-5 md:gap-x-8">
-          <a class="btn btn-primary" href="/#">
+          <a class="btn btn-primary" href="mailto:hello@contraption.co">
             <span>Contact →</span>
           </a>
           <div class="-mr-1 md:hidden">
