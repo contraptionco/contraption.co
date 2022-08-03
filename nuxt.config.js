@@ -52,7 +52,8 @@ export default {
   modules: [
     '@nuxtjs/pwa',
     '@nuxt/content',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@lostdesign/nuxt-fathom'
   ],
 
   pwa: {
@@ -79,6 +80,18 @@ export default {
   },
   generate: {
     fallback: true
+  },
+  fathom: {
+    spa: 'history',
+    siteId: 'KAJMKSIJ',
+    url: 'https://radio.contraption.co/script.js',
+    includedDomains: [
+      'contraption.co',
+      'www.contraption.co'
+    ]
+  },
+  router: {
+    middleware: ['fathom']
   },
   sitemap: {
     hostname: 'https://www.contraption.co',
