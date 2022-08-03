@@ -27,7 +27,7 @@
           <a class="btn btn-primary" href="mailto:hello@contraption.co">
             <span>Contact →</span>
           </a>
-          <div class="-mr-1 md:hidden">
+          <div class="-mr-1 hidden">
             <div>
               <button
                 class="
@@ -143,6 +143,7 @@ export default {
     return {
       menuOpen: false,
       items: [
+        /*
         {
           name: 'About',
           href: '/about'
@@ -155,6 +156,7 @@ export default {
           name: 'Projects',
           href: '/projects'
         }
+        */
       ]
     }
   }
