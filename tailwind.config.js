@@ -1,3 +1,4 @@
+import tailwindTypography from '@tailwindcss/typography'
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -51,5 +52,5 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [tailwindTypography]
 }
